@@ -2,7 +2,31 @@
 	margin: 0;
 	padding: 0;
 }
+/*------------Header-------------*/
 
+
+a:hover {
+	color: blue;
+}
+a:visited {
+	color: red;
+}
+/*------------Main Content-------------*/
 body {
 	background-color: rgba(30, 90, 100, 0.5);
+}
+
+main {
+	background-color: white;
+	box-shadow: 10px 10px 5px gray;
+	height: 50vh;
+	margin: 0 auto;
+	width: 80%;
+}
+/*------------Footer-------------*/
+.social {
+	margin-top: 2%;
+}
+.social-icon {
+	width: 5%;
 }
