@@ -3,14 +3,19 @@
 	padding: 0;
 }
 /*------------Header-------------*/
-
-
-a:hover {
-	color: blue;
-}
 a:visited {
 	color: red;
 }
+
+a:hover {
+	color: green;
+}
+
+a:active {
+	color: yellow;
+}
+
+
 /*------------Main Content-------------*/
 body {
 	background-color: rgba(30, 90, 100, 0.5);
@@ -18,8 +23,8 @@ body {
 
 main {
 	background-color: white;
-	box-shadow: 10px 10px 5px gray;
-	height: 50vh;
+	box-shadow: 10px 10px 5px gray, -5px -5px 5px gray;
+	height: 70vh;
 	margin: 0 auto;
 	width: 80%;
 }
