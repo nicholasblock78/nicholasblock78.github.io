@@ -19,24 +19,42 @@ body {
 
 
 /*} */
-
-.top-background h1 {
-	font-weight: bold;
-	font-size: 3em;
-	margin: 0 auto;
-	text-align: center;
-	width: 30%;
+.top-background {
+	height: 20vh;
 }
 
-.top-background h1 strong {
-	color: blue;
+.top-background h1 {
+	clear: left;
+	display: inline-block;
+	font-size: 1.5em;
+	letter-spacing: 5px;
+	margin: 0 auto;
+	text-align: center;
+	height: 5vh;
+}
+
+.top-background h1.strong {
+	color: black;
+	font-weight: bold;
+	font-size: 3em;
+	letter-spacing: -5px;
+	height: 10vh;
+
+	
+}
+
+.name-header {
+	height: 20vh;
+	margin: auto;
+	text-align: center;
+	width: 20%;
 }
 
 /*------------Navigation-------------*/
 
 nav {
 	height: 60vh;
-	margin-top: 15vh;
+	margin-top: 7.5vh;
 	padding: 30px;
 	position: absolute;
 	width: 10%;
@@ -87,9 +105,25 @@ main {
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px gray, -5px -2.5px 5px gray;
 	height: 60vh;
-	margin: 0 auto;
+	margin-left: 15%;
 	padding: 3%;
 	width: 75%;
+}
+
+/*------------Mobile-------------*/
+@media screen and (max-width: 350px) {
+
+}
+
+/*------------Two Column Layout-------------*/
+@media screen and (max-width: 960px) {
+	
+}
+
+
+/*------------Three Column Layout-------------*/
+@media screen and (max-width: 1500px) {
+	
 }
 
 /*------------Footer-------------*/
