@@ -16,7 +16,7 @@ body {
 .top-background h1 {
 	display: inline-block;
 	font-size: 1.5em;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	margin: 0 auto;
 	text-align: center;
 	
@@ -44,7 +44,7 @@ body {
 nav {
 	height: 60vh;
 	margin-top: 7.5vh;
-	padding: 30px;
+	padding: 25px 15px 0px 15px;
 	position: absolute;
 	width: 10%;
 }
@@ -56,18 +56,20 @@ nav ul {
 	/*height: 100px;*/
 }
 
-nav ul a {
-
+nav ul li {
+	margin: 25px auto;
+	
 }
 
-nav ul a li {
+nav ul li a {
 	background-color: goldenrod;
-	border-radius: 7.5px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
 	height: 25px;
-	margin-bottom: 7.5%;
-	padding: 5px;
-	padding-left: 15px;
-	width: 90%;
+	padding: 5px 0 0 10px;
+	display: block;
+	width: 100%;
+	min-width: 68px;
 }
 
 
@@ -92,7 +94,7 @@ a:active {
 main {
 	background-color: white;
 	border-radius: 5px;
-	box-shadow: 10px 10px 5px gray, -5px -2.5px 5px gray;
+	box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.5), -5px -2.5px 5px rgba(50, 50, 50, 0.5);
 	margin-left: 15%;
 	margin-top: 5vh;
 	padding: 3%;
@@ -100,46 +102,72 @@ main {
 	overflow: auto;
 }
 
+/*------------About Page -------------*/
+section.about {
+	width: 100%;
+	display: inline: block;
+	margin: 60px 0 0 0;
+}
+
+img#about-pic {
+	border-radius: 10px;
+	width: 30%;
+	display: inline;
+	float: left;
+}
+p#about-me {
+	display: inline-block;
+
+}
+
 /*------------Portfolio Page Gallery-------------*/
 
 .work-gallery {
 	width: 98%;
-	margin: 0 1%;
+	margin: 0 2.5%;
 	padding: 0;
 	text-align: center;
-	
-	
+
+	list-style-type: none;
 }
 
 .work-gallery a {
 	height: 250px;
-	margin: 2.5px;
-	min-width: 27.5%;
-	width: 32.5%;
+	margin: 1%;
+	padding: 2.5px;
+	/*min-width: 27.5%;*/
+	width: 30%;
 	border: 1px solid black;
 	float: left;
-	list-style: none;
+	display: inline-block;
 
 }
 
+
+/*do the math to find out the margins height of parent element minus img height divided by 2 to get top and bottom margins*/
 .thumbnail {
-	width: 75%;
-	margin: auto;
+	width: 100%;
+	
+	/*margin-top: 25px;*/
+	vertical-align: center;
+}
+
+h3#other-work {
+	clear: left;
 }
 
 /*------------Mobile-------------*/
 
-@media screen and (max-width: 350px) {
-	@media screen and (max-width: 960px) {
+@media screen and (max-width: 380px) {
 	#work-gallery li:nth-child(1n+1) {
 	clear: left;
 	min-width: 30%;
 }
 }
-}
+
 
 /*------------Two Column Layout-------------*/
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 380px) and (max-width: 700px) {
 	#work-gallery li:nth-child(2n+1) {
 	clear: left;
 	min-width: 30%;
@@ -148,13 +176,15 @@ main {
 
 
 /*------------Three Column Layout-------------*/
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 700px) and (max-width: 1500px) {
 	#work-gallery li:nth-child(3n+1) {
 	clear: left;
 }
 }
 
 /*------------Contact Page-------------*/
+
+
 
 label, input {
     display: inline-block;
@@ -165,6 +195,9 @@ label {
     text-align: right;
 }
 
+button {
+	margin-left:25%;
+}
 
 /*------------Footer-------------*/
 
