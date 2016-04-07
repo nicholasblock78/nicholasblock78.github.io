@@ -166,6 +166,9 @@ label {
     text-align: right;
 }
 
+button {
+	margin-left:25%;
+}
 
 /*------------Footer-------------*/
 
