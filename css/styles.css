@@ -7,18 +7,7 @@ body {
 	background-color: rgba(30, 90, 100, 0.5);
 }
 /*------------Header-------------*/
-/*
-.top-background {
-	background-image: url("../images/background.jpg");
-	background-position: 79% 43%;
-	background-repeat: no-repeat;
-	background-attachment: ;
-	background-size: 700px 450px;
-	/*opacity: 0.3;*/
-	/*height: 40vh;*/
 
-
-/*} */
 .top-background {
 	height: 10vh;
 	margin-bottom: 5px;
@@ -108,13 +97,13 @@ main {
 	margin-top: 5vh;
 	padding: 3%;
 	width: 75%;
+	overflow: auto;
 }
 
 /*------------Portfolio Page Gallery-------------*/
 
-#work-gallery {
+.work-gallery {
 	width: 98%;
-	height: 675px;
 	margin: 0 1%;
 	padding: 0;
 	text-align: center;
@@ -122,35 +111,60 @@ main {
 	
 }
 
-#work-gallery a {
+.work-gallery a {
 	height: 250px;
-	width: 32.75%;
+	margin: 2.5px;
+	min-width: 27.5%;
+	width: 32.5%;
 	border: 1px solid black;
 	float: left;
 	list-style: none;
 
 }
 
-#work-gallery li:nth-child(3n+1) {
-	clear: left;
+.thumbnail {
+	width: 75%;
+	margin: auto;
 }
 
 /*------------Mobile-------------*/
 
 @media screen and (max-width: 350px) {
-
+	@media screen and (max-width: 960px) {
+	#work-gallery li:nth-child(1n+1) {
+	clear: left;
+	min-width: 30%;
+}
+}
 }
 
 /*------------Two Column Layout-------------*/
 @media screen and (max-width: 960px) {
-	
+	#work-gallery li:nth-child(2n+1) {
+	clear: left;
+	min-width: 30%;
+}
 }
 
 
 /*------------Three Column Layout-------------*/
 @media screen and (max-width: 1500px) {
-	
+	#work-gallery li:nth-child(3n+1) {
+	clear: left;
 }
+}
+
+/*------------Contact Page-------------*/
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    width: 20%;
+    text-align: right;
+}
+
 
 /*------------Footer-------------*/
 
