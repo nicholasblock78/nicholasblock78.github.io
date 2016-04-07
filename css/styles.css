@@ -20,17 +20,17 @@ body {
 
 /*} */
 .top-background {
-	height: 20vh;
+	height: 10vh;
+	margin-bottom: 5px;
 }
 
 .top-background h1 {
-	clear: left;
 	display: inline-block;
 	font-size: 1.5em;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	margin: 0 auto;
 	text-align: center;
-	height: 5vh;
+	
 }
 
 .top-background h1.strong {
@@ -38,13 +38,13 @@ body {
 	font-weight: bold;
 	font-size: 3em;
 	letter-spacing: -5px;
-	height: 10vh;
+	
 
 	
 }
 
 .name-header {
-	height: 20vh;
+	height: ;
 	margin: auto;
 	text-align: center;
 	width: 20%;
@@ -78,7 +78,7 @@ nav ul a li {
 	margin-bottom: 7.5%;
 	padding: 5px;
 	padding-left: 15px;
-	width: 70%;
+	width: 90%;
 }
 
 
@@ -104,13 +104,39 @@ main {
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px gray, -5px -2.5px 5px gray;
-	height: 60vh;
 	margin-left: 15%;
+	margin-top: 5vh;
 	padding: 3%;
 	width: 75%;
 }
 
+/*------------Portfolio Page Gallery-------------*/
+
+#work-gallery {
+	width: 98%;
+	height: 675px;
+	margin: 0 1%;
+	padding: 0;
+	text-align: center;
+	
+	
+}
+
+#work-gallery a {
+	height: 250px;
+	width: 32.75%;
+	border: 1px solid black;
+	float: left;
+	list-style: none;
+
+}
+
+#work-gallery li:nth-child(3n+1) {
+	clear: left;
+}
+
 /*------------Mobile-------------*/
+
 @media screen and (max-width: 350px) {
 
 }

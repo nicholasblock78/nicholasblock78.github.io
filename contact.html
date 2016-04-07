@@ -21,6 +21,35 @@
 	<main>
 		<h2>To contact:</h2>
 		<p>Fill out this form:</p>
+		<form name="contact" action="contact-submission.html" method="" >
+		<fieldset>
+			<div>
+				<label>Full name:</label>
+				<input type="text" name="fullname">
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email">
+			</div>
+			<div>
+				<label>Phone Number:</label>
+				<input type="numbers" name="phone">
+			</div>
+			<div>
+				<label>Interested in?</label>
+				<select name="subject">
+					<option value="interest">Web Development</option>
+					<option value="interest">Health Coaching</option>
+					<option value="interest">Copywriting</option>
+				</select>
+			</div>
+			<div>
+				<label>Comments</label>
+				<textarea></textarea>
+			</div>
+		</fiedset>
+		<button type="submit">Submit</button>
+	</form>
 	</main>
 
 	<footer>
