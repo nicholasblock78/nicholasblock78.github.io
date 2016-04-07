@@ -16,7 +16,7 @@ body {
 .top-background h1 {
 	display: inline-block;
 	font-size: 1.5em;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 	margin: 0 auto;
 	text-align: center;
 	
@@ -44,7 +44,7 @@ body {
 nav {
 	height: 60vh;
 	margin-top: 7.5vh;
-	padding: 30px;
+	padding: 25px 15px 0px 15px;
 	position: absolute;
 	width: 10%;
 }
@@ -66,9 +66,10 @@ nav ul li a {
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
 	height: 25px;
-	padding: 5px 0 0 15px;
+	padding: 5px 0 0 10px;
 	display: block;
-	width: 110px;
+	width: 100%;
+	min-width: 68px;
 }
 
 
@@ -101,46 +102,62 @@ main {
 	overflow: auto;
 }
 
+/*------------About Page -------------*/
+
+img#about-pic {
+	width: 30%;
+	transform: rotate(90deg);
+	display: inline;
+}
+
 /*------------Portfolio Page Gallery-------------*/
 
 .work-gallery {
 	width: 98%;
-	margin: 0 1%;
+	margin: 0 2.5%;
 	padding: 0;
 	text-align: center;
-	
-	
+
+	list-style-type: none;
 }
 
 .work-gallery a {
 	height: 250px;
-	margin: 2.5px;
-	min-width: 27.5%;
-	width: 32.5%;
+	margin: 1%;
+	padding: 2.5px;
+	/*min-width: 27.5%;*/
+	width: 30%;
 	border: 1px solid black;
 	float: left;
-	list-style: none;
+	display: inline-block;
 
 }
 
+
+/*do the math to find out the margins height of parent element minus img height divided by 2 to get top and bottom margins*/
 .thumbnail {
-	width: 75%;
-	margin: auto;
+	width: 100%;
+	
+	/*margin-top: 25px;*/
+	vertical-align: center;
+}
+
+h3#other-work {
+	clear: left;
 }
 
 /*------------Mobile-------------*/
 
-@media screen and (max-width: 350px) {
-	@media screen and (max-width: 960px) {
+@media screen and (max-width: 380px) {
 	#work-gallery li:nth-child(1n+1) {
 	clear: left;
 	min-width: 30%;
 }
 }
-}
+
 
 /*------------Two Column Layout-------------*/
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 380px) and (max-width: 700px) {
 	#work-gallery li:nth-child(2n+1) {
 	clear: left;
 	min-width: 30%;
@@ -149,7 +166,7 @@ main {
 
 
 /*------------Three Column Layout-------------*/
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 700px) and (max-width: 1500px) {
 	#work-gallery li:nth-child(3n+1) {
 	clear: left;
 }
