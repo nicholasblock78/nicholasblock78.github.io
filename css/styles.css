@@ -56,18 +56,19 @@ nav ul {
 	/*height: 100px;*/
 }
 
-nav ul a {
-
+nav ul li {
+	margin: 25px auto;
+	
 }
 
-nav ul a li {
+nav ul li a {
 	background-color: goldenrod;
-	border-radius: 7.5px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
 	height: 25px;
-	margin-bottom: 7.5%;
-	padding: 5px;
-	padding-left: 15px;
-	width: 90%;
+	padding: 5px 0 0 15px;
+	display: block;
+	width: 110px;
 }
 
 
@@ -92,7 +93,7 @@ a:active {
 main {
 	background-color: white;
 	border-radius: 5px;
-	box-shadow: 10px 10px 5px gray, -5px -2.5px 5px gray;
+	box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.5), -5px -2.5px 5px rgba(50, 50, 50, 0.5);
 	margin-left: 15%;
 	margin-top: 5vh;
 	padding: 3%;
