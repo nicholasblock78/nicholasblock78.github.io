@@ -150,6 +150,11 @@ p#about-me::first-letter {
 	display: inline-block;
 
 }
+
+img#eat {
+	margin-top: 60px;
+}
+
 img#paws {
 	width: 75%;
 }
