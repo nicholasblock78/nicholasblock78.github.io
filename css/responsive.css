@@ -1,0 +1,25 @@
+/*------------Mobile-------------*/
+
+@media screen and (max-width: 380px) {
+	#work-gallery li:nth-child(1n+1) {
+	clear: left;
+	min-width: 30%;
+}
+}
+
+
+/*------------Two Column Layout-------------*/
+@media screen and (min-width: 380px) and (max-width: 700px) {
+	#work-gallery li:nth-child(2n+1) {
+	clear: left;
+	min-width: 30%;
+}
+}
+
+
+/*------------Three Column Layout-------------*/
+@media screen and (min-width: 700px) and (max-width: 1500px) {
+	#work-gallery li:nth-child(3n+1) {
+	clear: left;
+}
+}
