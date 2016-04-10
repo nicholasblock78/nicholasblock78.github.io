@@ -163,6 +163,13 @@ img#bear {
 	width: 68%;
 }
 
+img#roadtrip {
+	width: 65%;
+}
+
+img#cows {
+	width: 85%;
+}
 /*do the math to find out the margins height of parent element minus img height divided by 2 to get top and bottom margins*/
 .thumbnail {
 	width: 100%;
