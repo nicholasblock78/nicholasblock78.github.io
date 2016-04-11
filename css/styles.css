@@ -48,6 +48,7 @@ nav {
 	position: absolute;
 	text-align: center;
 	width: 12.5%;
+	min-width: 6%;
 }
 
 nav ul {
@@ -135,7 +136,7 @@ p#about-me::first-letter {
 	margin: 0 2.5%;
 	padding: 0;
 	text-align: center;
-
+	overflow: hidden;
 	list-style-type: none;
 }
 
